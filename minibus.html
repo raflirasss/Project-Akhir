@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AdminLTE 3 | Dashboard</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css">
+  <!-- Ionicons -->
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <!-- Tempusdominus Bootstrap 4 -->
+  <link rel="stylesheet" href="plugins/tempusdominus-bootstrap-4/css/tempusdominus-bootstrap-4.min.css">
+  <!-- iCheck -->
+  <link rel="stylesheet" href="plugins/icheck-bootstrap/icheck-bootstrap.min.css">
+  <!-- JQVMap -->
+  <link rel="stylesheet" href="plugins/jqvmap/jqvmap.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+  <!-- overlayScrollbars -->
+  <link rel="stylesheet" href="plugins/overlayScrollbars/css/OverlayScrollbars.min.css">
+  <!-- Daterange picker -->
+  <link rel="stylesheet" href="plugins/daterangepicker/daterangepicker.css">
+  <!-- summernote -->
+  <link rel="stylesheet" href="plugins/summernote/summernote-bs4.min.css">
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+<div class="wrapper">
+
+  <!-- Preloader -->
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" src="dist/img/AdminLTELogo.png" alt="AdminLTELogo" height="60" width="60">
+  </div>
+
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="table.html" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!-- Navbar Search -->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="navbar-search" href="#" role="button">
+          <i class="fas fa-search"></i>
+        </a>
+        <div class="navbar-search-block">
+          <form class="form-inline">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+                <button class="btn btn-navbar" type="button" data-widget="navbar-search">
+                  <i class="fas fa-times"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </li>
+
+      <!-- Messages Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">3</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <span class="dropdown-item dropdown-header">15 Notifications</span>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-controlsidebar-slide="true" href="#" role="button">
+          <i class="fas fa-th-large"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index.html" class="brand-link">
+      <img src="https://st4.depositphotos.com/16255066/26802/v/600/depositphotos_268023442-stock-illustration-vector-logo-for-car-rental.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">Sewa Mobil</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Jajang Supratman</a>
+        </div>
+      </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="index.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Home</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="admin.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Admin</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+      </nav>
+      <nav class="mt-3">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Kategori Produk
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="mobil.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Mobil</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="buspariwisata.html" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Bus Pariwisata</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="kategoriminibus.html" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Minibus</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+  <!-- Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- Content Header (Page header) -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" >
+                <h3>
+                    KATEGORI MINIBUS
+                </h3>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="https://awsimages.detik.net.id/community/media/visual/2020/09/13/mazda-bongo-rebadge-daihatsu-gran-max-yang-dijual-di-jepang.jpeg?w=700&q=90" width="315"/>
+                <dl>
+                    <dt>
+                        Minibus Daihatsu Grand Max
+                    </dt>
+                    <dd>
+                        Daihatsu Gran Max adalah line-up mobil untuk Gran Max minibus ada 2 varian yaitu minibus dan blind van dan untuk Gran Max pickup ada 2 varian yaitu bak terbuka dan box di Indonesia.
+                    </dd>
+                    <dt>
+                        Biaya Sewa Kendaraan Minibus Daihatsu Grand Max.
+                    </dt>
+                    <dd>
+                        Biaya Sewa : Rp. 700.000 / 6 - 12 Jam.
+                        <br>
+                        Biaya Sewa : Rp. 1.000.000 / Hari.
+                        <br>
+                        Biaya Sewa : Rp. 5.000.000 / Minggu
+                    </dd>
+                    <dd>
+                        <strong>Kapasitas Penumpang 6 - 8 Orang.</strong>
+                    </dd>
+            </div>
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="https://www.suzuki.co.id/assets/static/img/variant/thumb/APV-New-Luxury-white.jpg" width="300"/>
+                <dl>
+                    <dt>
+                        Minibus Suzuki APV
+                    </dt>
+                    <dd>
+                        Suzuki APV/Mega Carry adalah minibus/pikap yang di kembangkan di Jepang yang memiliki desain menyerupai Carry generasi ke 7 dan di rakit di Indonesia oleh PT. Suzuki Indomobil Motor sejak tahun 2004 untuk menggantikan Every Plus/Carry 1.3.
+                    </dd>
+                    <dt>
+                        Biaya Sewa Minibus Suzuki APV.
+                    </dt>
+                    <dd>
+                        Biaya Sewa : Rp. 600.000 / 6 - 12 Jam.
+                        <br>
+                        Biaya Sewa : Rp. 800.000 / Hari.
+                        <br>
+                        Biaya Sewa : Rp. 3.500.000 / Minggu
+                    </dd>
+                    <dd>
+                        <strong>Kapasitas Penumpang 6 - 8 Orang.</strong>
+                    </dd>
+            </div>
+            <div class="col-md-4">
+                <img alt="Bootstrap Image Preview" src="data:image/jpeg;base64,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" />
+                <dl>
+                    <dt>
+                        Minibus Hyundai H1
+                    </dt>
+                    <dd>
+                        Hyundai H1 merupakan minibus dengan kemampuan menampung hingga 6 - 8 orang. Mesing tersedia dalam 2 jenis yaitu berbahan bakar bensin dan diesel. Kedua mesin tersebut tentunya bisa diandalkan untuk perjalanan yang cukup jauh.
+                    </dd>
+                    <dt>
+                        Biaya Sewa Kendaraan Minibus Hyundai H1.
+                    </dt>
+                    <dd>
+                        Biaya Sewa : Rp. 500.000 / 6 - 12 Jam.
+                        <br>
+                        Biaya Sewa : Rp. 700.000 / Hari.
+                        <br>
+                        Biaya Sewa : Rp. 3.000.000 / Minggu.
+                    </dd>
+                    <dd>
+                        <strong>Kapasitas Penumpang 6 - 8 Orang.</strong>
+                    </dd>
+            </div>
+
+  <!-- /.content-wrapper -->
+  <footer class="main-footer">
+    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong>
+    All rights reserved.
+    <div class="float-right d-none d-sm-inline-block">
+      <b>Version</b> 3.2.0
+    </div>
+  </footer>
+
+  <!-- Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+  </aside>
+  <!-- /.control-sidebar -->
+</div>
+<!-- ./wrapper -->
+
+<!-- jQuery -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<!-- jQuery UI 1.11.4 -->
+<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
+<script>
+  $.widget.bridge('uibutton', $.ui.button)
+</script>
+<!-- Bootstrap 4 -->
+<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- ChartJS -->
+<script src="plugins/chart.js/Chart.min.js"></script>
+<!-- Sparkline -->
+<script src="plugins/sparklines/sparkline.js"></script>
+<!-- JQVMap -->
+<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
+<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<!-- jQuery Knob Chart -->
+<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<!-- daterangepicker -->
+<script src="plugins/moment/moment.min.js"></script>
+<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<!-- Tempusdominus Bootstrap 4 -->
+<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<!-- Summernote -->
+<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<!-- overlayScrollbars -->
+<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<!-- AdminLTE App -->
+<script src="dist/js/adminlte.js"></script>
+</body>
+</html>
